@@ -1,15 +1,12 @@
 name: Mi flujo de trabajo simple
-
 on:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Ejecutar un script
-      run: echo "Hello, World!"
+      - uses: actions/checkout@v2
+      - name: Ejecutar un script
+        run: echo "Hello, World!"
