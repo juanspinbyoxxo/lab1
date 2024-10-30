@@ -1,0 +1,15 @@
+name: CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: Cactions/checkout@v2
+      - name: Ejecutar un script
+        run: echo "Hello, World!"
