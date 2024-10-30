@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: Cactions/checkout@v2
       - name: Ejecutar un script
+      - uses: actions/checkout@v2
         run: echo "Hello, World!"
