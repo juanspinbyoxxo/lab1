@@ -1,15 +1,12 @@
-name: CI Workflow
-
+name: Mi flujo de trabajo simple
 on:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: Cactions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Ejecutar un script
         run: echo "Hello, World!"
